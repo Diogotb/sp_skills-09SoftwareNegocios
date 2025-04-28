@@ -1,0 +1,14 @@
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\obj\Debug\net9.0\C#e.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\obj\Debug\net9.0\C#e.NET.AssemblyInfoInputs.cache
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\obj\Debug\net9.0\C#e.NET.AssemblyInfo.cs
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\obj\Debug\net9.0\C#e.NET.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\bin\Debug\net9.0\C#e.NET.exe
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\bin\Debug\net9.0\C#e.NET.deps.json
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\bin\Debug\net9.0\C#e.NET.runtimeconfig.json
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\bin\Debug\net9.0\C#e.NET.dll
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\bin\Debug\net9.0\C#e.NET.pdb
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\obj\Debug\net9.0\C#e.NET.dll
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\obj\Debug\net9.0\refint\C#e.NET.dll
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\obj\Debug\net9.0\C#e.NET.pdb
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\obj\Debug\net9.0\C#e.NET.genruntimeconfig.cache
+C:\Users\Aluno\Documents\Treino - #09\C#e.NET\obj\Debug\net9.0\ref\C#e.NET.dll
