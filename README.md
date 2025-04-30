@@ -120,3 +120,6 @@ Profissionais dessa área desenvolvem soluções de software para empresas, atua
 - Segunda a Quarta: Simulado Completo (todas plataformas)
 - Quinta: Simulação de pitch técnico
 - Sexta: Feedback e encerramento
+
+## Local que eu colocarei os relatorios:
+https://encurtador.com.br/v73dW
