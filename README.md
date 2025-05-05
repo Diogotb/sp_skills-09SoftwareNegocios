@@ -121,5 +121,5 @@ Profissionais dessa área desenvolvem soluções de software para empresas, atua
 - Quinta: Simulação de pitch técnico
 - Sexta: Feedback e encerramento
 
-## Local que eu colocarei os relatorios:
+## Local que Eu( Miguel ) colocarei os relatorios:
 https://encurtador.com.br/v73dW
