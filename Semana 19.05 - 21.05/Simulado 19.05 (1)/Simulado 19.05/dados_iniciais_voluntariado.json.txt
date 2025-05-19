@@ -1,0 +1,132 @@
+{
+  "areasAtuacao": [
+    { "idArea": 1, "nomeArea": "Saúde", "sigla": "SA", "icone": "icone_saude.png" },
+    { "idArea": 2, "nomeArea": "Educação", "sigla": "ED", "icone": "icone_educacao.png" },
+    { "idArea": 3, "nomeArea": "Meio Ambiente", "sigla": "MA", "icone": "icone_meio_ambiente.png" },
+    { "idArea": 4, "nomeArea": "Assistência Social", "sigla": "AS", "icone": "icone_assistencia.png" }
+  ],
+  "voluntarios": [
+    {
+      "idVoluntario": 101,
+      "nome": "Ana",
+      "sobrenome": "Silva",
+      "idade": 28,
+      "cidade": "São Paulo",
+      "estadoSigla": "SP",
+      "avatar": "ana_silva.png",
+      "idAreaPrincipal": 2, // Educação
+      "nivelEngajamento": "Prata" // Pode ser pré-calculado ou calculado no app
+    },
+    {
+      "idVoluntario": 102,
+      "nome": "Bruno",
+      "sobrenome": "Costa",
+      "idade": 35,
+      "cidade": "Rio de Janeiro",
+      "estadoSigla": "RJ",
+      "avatar": null, // Usará default_avatar.png
+      "idAreaPrincipal": 1, // Saúde
+      "nivelEngajamento": "Ouro"
+    },
+    {
+      "idVoluntario": 103,
+      "nome": "Carla",
+      "sobrenome": "Lima",
+      "idade": 22,
+      "cidade": "Belo Horizonte",
+      "estadoSigla": "MG",
+      "avatar": "carla_lima.png",
+      "idAreaPrincipal": 3, // Meio Ambiente
+      "nivelEngajamento": "Bronze"
+    }
+    // ... mais 497 voluntários para completar os 500
+  ],
+  "projetos": [
+    {
+      "idProjeto": 201,
+      "nomeProjeto": "Alfabetização na Comunidade Sol",
+      "descricao": "Projeto de aulas de reforço e alfabetização para crianças da comunidade.",
+      "idAreaAtuacao": 2, // Educação
+      "status": "Ativo",
+      "fatorCriticidade": 1.2, // Usado para calcular o "nível de impacto"
+      "localizacao": "Comunidade Sol, São Paulo",
+      "dataInicio": "2023-01-15",
+      "dataFimPrevista": "2023-12-15",
+      "icone": "projeto_alfabetizacao.png"
+    },
+    {
+      "idProjeto": 202,
+      "nomeProjeto": "Limpeza da Praia Azul",
+      "descricao": "Mutirão de limpeza e conscientização ambiental na Praia Azul.",
+      "idAreaAtuacao": 3, // Meio Ambiente
+      "status": "Planejado",
+      "fatorCriticidade": 1.0,
+      "localizacao": "Praia Azul, Rio de Janeiro",
+      "dataInicio": "2023-05-20",
+      "dataFimPrevista": "2023-05-21",
+      "icone": "projeto_praia.png"
+    },
+    {
+      "idProjeto": 203,
+      "nomeProjeto": "Apoio ao Asilo Esperança",
+      "descricao": "Atividades recreativas e de apoio aos idosos do Asilo Esperança.",
+      "idAreaAtuacao": 4, // Assistência Social
+      "status": "Concluído",
+      "fatorCriticidade": 1.1,
+      "localizacao": "Asilo Esperança, Belo Horizonte",
+      "dataInicio": "2022-10-01",
+      "dataFimPrevista": "2023-03-30",
+      "icone": "projeto_asilo.png"
+    }
+    // ... mais projetos
+  ],
+  "registrosHoras": [
+    {
+      "idRegistro": 301,
+      "idVoluntario": 101, // Ana Silva
+      "idProjeto": 201,     // Alfabetização na Comunidade Sol
+      "dataAtividade": "2023-02-10",
+      "horasDedicadas": 4
+    },
+    {
+      "idRegistro": 302,
+      "idVoluntario": 102, // Bruno Costa
+      "idProjeto": 201,     // Alfabetização na Comunidade Sol (exemplo, Bruno pode participar de múltiplos)
+      "dataAtividade": "2023-02-12",
+      "horasDedicadas": 3
+    },
+    {
+      "idRegistro": 303,
+      "idVoluntario": 101, // Ana Silva
+      "idProjeto": 201,
+      "dataAtividade": "2023-02-17",
+      "horasDedicadas": 4
+    },
+    {
+      "idRegistro": 304,
+      "idVoluntario": 103, // Carla Lima
+      "idProjeto": 202,     // Limpeza da Praia Azul
+      "dataAtividade": "2023-05-20",
+      "horasDedicadas": 8
+    }
+    // ... mais registros de horas
+  ],
+  "dadosDashboardImpacto": { // Dados agregados que podem ser usados diretamente ou como referência para cálculo no app
+    "impactoPorEstado": [
+      { "estadoSigla": "SP", "totalHoras": 5200, "totalProjetos": 15 },
+      { "estadoSigla": "RJ", "totalHoras": 3800, "totalProjetos": 10 },
+      { "estadoSigla": "MG", "totalHoras": 4100, "totalProjetos": 12 }
+      // ... outros estados
+    ],
+    "impactoPorRegiao": [
+      { "regiao": "Sudeste", "totalHoras": 13100, "totalProjetos": 37 },
+      { "regiao": "Nordeste", "totalHoras": 8500, "totalProjetos": 25 }
+      // ... outras regiões
+    ],
+    "impactoPorCausa": [
+      { "idAreaAtuacao": 1, "nomeArea": "Saúde", "totalHoras": 7000, "totalProjetos": 20 },
+      { "idAreaAtuacao": 2, "nomeArea": "Educação", "totalHoras": 9500, "totalProjetos": 30 }
+      // ... outras causas
+    ]
+  }
+}
