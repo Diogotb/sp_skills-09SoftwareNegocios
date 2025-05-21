@@ -1,0 +1,199 @@
+{
+  "areasAtuacao": [
+    {
+      "idArea": 1,
+      "nomeArea": "Saúde",
+      "sigla": "SA",
+      "icone": "icone_saude.png",
+      "id": "86a7"
+    },
+    {
+      "idArea": 2,
+      "nomeArea": "Educação",
+      "sigla": "ED",
+      "icone": "icone_educacao.png",
+      "id": "a900"
+    },
+    {
+      "idArea": 3,
+      "nomeArea": "Meio Ambiente",
+      "sigla": "MA",
+      "icone": "icone_meio_ambiente.png",
+      "id": "d4a8"
+    },
+    {
+      "idArea": 4,
+      "nomeArea": "Assistência Social",
+      "sigla": "AS",
+      "icone": "icone_assistencia.png",
+      "id": "2161"
+    }
+  ],
+  "voluntarios": [
+    {
+      "idVoluntario": 101,
+      "nome": "Ana",
+      "sobrenome": "Silva",
+      "idade": 28,
+      "cidade": "São Paulo",
+      "estadoSigla": "SP",
+      "avatar": "ana_silva.png",
+      "idAreaPrincipal": 2,
+      "nivelEngajamento": "Prata",
+      "id": "a65b"
+    },
+    {
+      "idVoluntario": 102,
+      "nome": "Bruno",
+      "sobrenome": "Costa",
+      "idade": 35,
+      "cidade": "Rio de Janeiro",
+      "estadoSigla": "RJ",
+      "avatar": null,
+      "idAreaPrincipal": 1,
+      "nivelEngajamento": "Ouro",
+      "id": "ff1c"
+    },
+    {
+      "idVoluntario": 103,
+      "nome": "Carla",
+      "sobrenome": "Lima",
+      "idade": 22,
+      "cidade": "Belo Horizonte",
+      "estadoSigla": "MG",
+      "avatar": "carla_lima.png",
+      "idAreaPrincipal": 3,
+      "nivelEngajamento": "Bronze",
+      "id": "ae82"
+    },
+    {
+      "id": "28c4",
+      "nome": "Miguel",
+      "sobrenome": "Picinin",
+      "idade": 17,
+      "cidade": "Limeira",
+      "estadoSigla": "SP",
+      "senha": "1234567"
+    }
+  ],
+  "projetos": [
+    {
+      "idProjeto": 201,
+      "nomeProjeto": "Alfabetização na Comunidade Sol",
+      "descricao": "Projeto de aulas de reforço e alfabetização para crianças da comunidade.",
+      "idAreaAtuacao": 2,
+      "status": "Ativo",
+      "fatorCriticidade": 1.2,
+      "localizacao": "Comunidade Sol, São Paulo",
+      "dataInicio": "2023-01-15",
+      "dataFimPrevista": "2023-12-15",
+      "icone": "projeto_alfabetizacao.png",
+      "id": "84e0"
+    },
+    {
+      "idProjeto": 202,
+      "nomeProjeto": "Limpeza da Praia Azul",
+      "descricao": "Mutirão de limpeza e conscientização ambiental na Praia Azul.",
+      "idAreaAtuacao": 3,
+      "status": "Planejado",
+      "fatorCriticidade": 1,
+      "localizacao": "Praia Azul, Rio de Janeiro",
+      "dataInicio": "2023-05-20",
+      "dataFimPrevista": "2023-05-21",
+      "icone": "projeto_praia.png",
+      "id": "455c"
+    },
+    {
+      "idProjeto": 203,
+      "nomeProjeto": "Apoio ao Asilo Esperança",
+      "descricao": "Atividades recreativas e de apoio aos idosos do Asilo Esperança.",
+      "idAreaAtuacao": 4,
+      "status": "Concluído",
+      "fatorCriticidade": 1.1,
+      "localizacao": "Asilo Esperança, Belo Horizonte",
+      "dataInicio": "2022-10-01",
+      "dataFimPrevista": "2023-03-30",
+      "icone": "projeto_asilo.png",
+      "id": "a430"
+    }
+  ],
+  "registrosHoras": [
+    {
+      "idRegistro": 301,
+      "idVoluntario": 101,
+      "idProjeto": 201,
+      "dataAtividade": "2023-02-10",
+      "horasDedicadas": 4,
+      "id": "fa2f"
+    },
+    {
+      "idRegistro": 302,
+      "idVoluntario": 102,
+      "idProjeto": 201,
+      "dataAtividade": "2023-02-12",
+      "horasDedicadas": 3,
+      "id": "ad61"
+    },
+    {
+      "idRegistro": 303,
+      "idVoluntario": 101,
+      "idProjeto": 201,
+      "dataAtividade": "2023-02-17",
+      "horasDedicadas": 4,
+      "id": "64c8"
+    },
+    {
+      "idRegistro": 304,
+      "idVoluntario": 103,
+      "idProjeto": 202,
+      "dataAtividade": "2023-05-20",
+      "horasDedicadas": 8,
+      "id": "769c"
+    }
+  ],
+  "dadosDashboardImpacto": {
+    "impactoPorEstado": [
+      {
+        "estadoSigla": "SP",
+        "totalHoras": 5200,
+        "totalProjetos": 15
+      },
+      {
+        "estadoSigla": "RJ",
+        "totalHoras": 3800,
+        "totalProjetos": 10
+      },
+      {
+        "estadoSigla": "MG",
+        "totalHoras": 4100,
+        "totalProjetos": 12
+      }
+    ],
+    "impactoPorRegiao": [
+      {
+        "regiao": "Sudeste",
+        "totalHoras": 13100,
+        "totalProjetos": 37
+      },
+      {
+        "regiao": "Nordeste",
+        "totalHoras": 8500,
+        "totalProjetos": 25
+      }
+    ],
+    "impactoPorCausa": [
+      {
+        "idAreaAtuacao": 1,
+        "nomeArea": "Saúde",
+        "totalHoras": 7000,
+        "totalProjetos": 20
+      },
+      {
+        "idAreaAtuacao": 2,
+        "nomeArea": "Educação",
+        "totalHoras": 9500,
+        "totalProjetos": 30
+      }
+    ]
+  }
+}
