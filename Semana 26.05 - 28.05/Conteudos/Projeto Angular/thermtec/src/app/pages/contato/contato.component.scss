@@ -1,0 +1,206 @@
+@use "sass:color";
+
+$primary-blue: #28377d;
+$light-gray: #f0f0f0;
+$medium-gray: #d4d4d4;
+$text-color: #333;
+$white: #fff;
+$error-red: #e74c3c;
+
+:host {
+  display: block;
+  padding: 20px;
+  background-color: $light-gray;
+  font-family: Arial, sans-serif;
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 30px;
+  h2 {
+    color: $primary-blue;
+    margin-bottom: 10px;
+    font-size: 2.2em;
+  }
+  p {
+    color: $text-color;
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  background-color: $white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  border: 1px solid $medium-gray;
+
+  .contact-form {
+    width: 100%;
+
+    .form-group {
+      margin-bottom: 20px;
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: $primary-blue;
+        font-size: 1em;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: calc(100% - 20px);
+        padding: 12px 10px;
+        border: 1px solid $medium-gray;
+        border-radius: 5px;
+        font-size: 1em;
+        color: $text-color;
+        background-color: #fcfcfc;
+
+        &:focus {
+          border-color: $primary-blue;
+          outline: none;
+          box-shadow: 0 0 0 2px rgba($primary-blue, 0.2);
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      input.ng-invalid.ng-touched,
+      textarea.ng-invalid.ng-touched {
+        border-color: $error-red;
+      }
+
+      .error-message {
+        color: $error-red;
+        font-size: 0.9em;
+        margin-top: 5px;
+        display: block;
+      }
+    }
+
+    button[type="submit"] {
+      background-color: #ff8c00;
+      color: $white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      width: 100%;
+
+      &:hover {
+        background-color: color.adjust(#ff8c00, $lightness: -10%);
+      }
+
+      &:disabled {
+        background-color: $medium-gray;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.direct-contact-info {
+  background-color: $white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid $medium-gray;
+
+  h3 {
+    color: $primary-blue;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+  }
+
+  .contact-channels {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .channel-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.1em;
+      color: $text-color;
+
+      span:first-child {
+        font-weight: bold;
+      }
+
+      a {
+        color: $primary-blue;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form-section,
+  .direct-contact-info {
+    padding: 20px;
+    margin: 0 15px 30px 15px;
+  }
+
+  .contact-intro {
+    h2 {
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    width: calc(100% - 16px);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-section,
+  .direct-contact-info {
+    padding: 15px;
+  }
+
+  .contact-intro {
+    h2 {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 0.95em;
+    }
+  }
+
+  .direct-contact-info .contact-channels {
+    flex-direction: column;
+    align-items: center;
+  }
+}
