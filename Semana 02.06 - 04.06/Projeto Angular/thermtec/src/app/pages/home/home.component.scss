@@ -1,0 +1,95 @@
+/* Estilos básicos para a tela Home */
+
+.home-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.hero-section {
+  background-color: #f4f4f4;
+  padding: 80px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.hero-section h1 {
+  color: #3f51b5; /* Cor primária do Material Design */
+  font-size: 2.8em;
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.call-to-action {
+  background-color: #3f51b5;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.call-to-action:hover {
+  background-color: #303f9f;
+}
+
+.services-section {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.services-section h2 {
+  color: #3f51b5;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #3f51b5;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #666;
+  font-size: 0.95em;
+}
+
+.footer-section {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.footer-section p {
+  margin: 0;
+  font-size: 0.9em;
+}

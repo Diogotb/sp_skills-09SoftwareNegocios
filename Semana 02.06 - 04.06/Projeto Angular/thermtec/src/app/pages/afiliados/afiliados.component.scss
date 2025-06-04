@@ -1,0 +1,143 @@
+/* Variáveis (opcional, mas bom para consistência) */
+$primary-color: #3f51b5; // Azul mais escuro
+$secondary-color: #f4f4f4; // Cinza claro
+$text-color: #333;
+$light-text-color: #666;
+$border-color: #ddd;
+$card-bg: #f9f9f9;
+$button-hover-color: #303f9f; // Azul mais escuro para o hover
+
+/* Estilos Globais/Reset (se não estiverem em outro lugar) */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  background-color: white; /* Cor de fundo padrão, se necessário */
+}
+
+.partners-intro,
+.affiliated-companies,
+.partners-call-to-action {
+  padding: 60px 20px;
+  max-width: 960px; /* Limita a largura do conteúdo para melhor leitura */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  text-align: center;
+}
+
+/* Seção de Introdução */
+.partners-intro {
+  background-color: $secondary-color;
+  border-bottom: 1px solid $border-color;
+
+  h2 {
+    color: $primary-color;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.1em;
+    color: $light-text-color;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 15px auto; /* Centraliza parágrafos */
+  }
+}
+
+/* Seção de Empresas Afiliadas */
+.affiliated-companies {
+  background-color: white;
+
+  h3 {
+    color: $primary-color;
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+}
+
+.company-list {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards quebrem a linha */
+  justify-content: center; /* Centraliza os cards */
+  gap: 30px; /* Espaço entre os cards */
+}
+
+.company-card {
+  background-color: $card-bg;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 30px;
+  width: 300px; /* Largura fixa para os cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left; /* Alinha o texto dentro do card à esquerda */
+
+  &:hover {
+    transform: translateY(-8px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  h4 {
+    color: $primary-color;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: $light-text-color;
+    font-size: 0.95em;
+    line-height: 1.7;
+  }
+}
+
+/* Seção de Chamada para Ação (Call to Action) */
+.partners-call-to-action {
+  background-color: $primary-color;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 50px; /* Espaçamento superior */
+
+  p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+  }
+
+  button {
+    background-color: white;
+    color: $primary-color;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: darken(white, 10%); /* Escurece um pouco no hover */
+      color: $button-hover-color;
+    }
+  }
+}
+
+/* Responsividade básica para telas menores */
+@media (max-width: 768px) {
+  .partners-intro h2 {
+    font-size: 2em;
+  }
+
+  .affiliated-companies h3 {
+    font-size: 1.8em;
+  }
+
+  .company-card {
+    width: 100%; /* Cards ocupam a largura total em telas menores */
+    max-width: 350px; /* Limite máximo para o card mesmo em 100% */
+  }
+
+  .company-list {
+    flex-direction: column; /* Coloca os cards em coluna */
+    align-items: center; /* Centraliza os cards */
+  }
+}
