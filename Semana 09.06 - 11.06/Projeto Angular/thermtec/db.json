@@ -1,0 +1,22 @@
+{
+  "slides": [
+    {
+      "id": "1",
+      "titulo": "Eficiência Energética",
+      "subtitulo": "Soluções inteligentes para um futuro sustentável.",
+      "imagem": "https://th.bing.com/th/id/OIP.wf0tIMfK-Yo4-Hhe3l6hkwHaGd?w=212&h=185&c=7&r=0&o=5&pid=1.7"
+    },
+    {
+      "id": "2",
+      "titulo": "Manutenção Predial Especializada",
+      "subtitulo": "Cuidamos do seu patrimônio com excelência.",
+      "imagem": "https://th.bing.com/th/id/OIP.KJTE3LcLjfoCYpcUTEin1QHaE7?w=280&h=185&c=7&r=0&o=5&pid=1.7"
+    },
+    {
+      "id": "3",
+      "titulo": "Projetos de Engenharia Térmica",
+      "subtitulo": "Conforto e qualidade para seu ambiente.",
+      "imagem": "https://th.bing.com/th/id/OIP.OGcVcYxA68MSQijsVEUEAAHaE4?w=280&h=185&c=7&r=0&o=5&pid=1.7"
+    }
+  ]
+}
