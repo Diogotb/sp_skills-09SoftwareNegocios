@@ -1,0 +1,53 @@
+<div class="home-container">
+  <header class="hero-section">
+    <h1>Bem-vindo à Thermtec</h1>
+    <p>Soluções inovadoras em Engenharia Térmica, Manutenção Predial e Eficiência Energética.</p>
+    <p class="call-to-action-text">
+      Descubra mais sobre nossa expertise e parcerias em engenharia térmica.
+    </p>
+
+    <section class="highlighted-projects" *ngIf="!isLoading; else loading">
+      <h2>Principais Projetos</h2>
+      <div class="cards-grid">
+        <div *ngFor="let projeto of projetos" class="card">
+          <h3>{{ projeto.titulo }}</h3>
+          <img [src]="projeto.imagem" [alt]="projeto.titulo" class="card-image" />
+          <p>{{ projeto.descricao }}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlighted-works" *ngIf="!isLoading">
+      <h2>Principais Obras</h2>
+      <div class="cards-grid">
+        <div *ngFor="let obra of obras" class="card">
+          <h3>{{ obra.titulo }}</h3>
+          <img [src]="obra.imagem" [alt]="obra.titulo" class="card-image" />
+          <p>{{ obra.descricao }}</p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <section class="services-section">
+    <h2>Nossos Serviços</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Engenharia Térmica</h3>
+        <p>Projetos personalizados para conforto e otimização de sistemas.</p>
+      </div>
+      <div class="card">
+        <h3>Manutenção Predial</h3>
+        <p>Cuidamos do seu patrimônio com agilidade e experiência.</p>
+      </div>
+      <div class="card">
+        <h3>Eficiência Energética</h3>
+        <p>Reduza custos e o impacto ambiental com nossas soluções.</p>
+      </div>
+    </div>
+  </section>
+
+  <ng-template #loading>
+    <div class="loading-message">Carregando dados...</div>
+  </ng-template>
+</div>

@@ -1,0 +1,132 @@
+/* Variáveis para cores e espaçamentos */
+$primary-color: #3f51b5; // Azul primário
+$secondary-color: #f4f4f4; // Cinza claro
+$text-color: #333; // Cor principal do texto
+$light-text-color: #666; // Texto secundário
+$border-color: #ddd; // Cor da borda
+$card-bg: #f9f9f9; // Fundo dos cards
+
+.portfolio-container {
+  font-family: Arial, sans-serif;
+  color: $text-color;
+  line-height: 1.6;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.portfolio-intro {
+  background-color: $secondary-color;
+  padding: 60px 20px;
+  border-bottom: 1px solid $border-color;
+
+  h2 {
+    color: $primary-color;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.1em;
+    color: $light-text-color;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+}
+
+.item-list-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading-message,
+.no-items-message {
+  font-size: 1.2em;
+  color: $light-text-color;
+  padding: 50px 0;
+}
+
+.item-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.item-card {
+  background-color: $card-bg;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+  &:hover,
+  &:focus-within {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    outline: none;
+  }
+}
+
+.item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content h3 {
+  color: $primary-color;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.item-description {
+  color: $text-color;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  font-weight: 400;
+}
+
+.item-location,
+.item-year {
+  color: $light-text-color;
+  font-size: 0.85em;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .portfolio-intro h2 {
+    font-size: 2em;
+  }
+
+  .item-list-section {
+    padding: 30px 15px;
+  }
+
+  .item-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

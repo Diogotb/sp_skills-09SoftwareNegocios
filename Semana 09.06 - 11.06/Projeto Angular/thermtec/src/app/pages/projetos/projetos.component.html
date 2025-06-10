@@ -1,0 +1,30 @@
+<div class="portfolio-container">
+  <section class="portfolio-intro">
+    <h2>Nossos Projetos de Engenharia</h2>
+    <p>Conheça a visão e o planejamento por trás de nossos projetos inovadores, que impulsionam soluções inteligentes e eficientes para o futuro.</p>
+  </section>
+
+  <section class="item-list-section">
+    <div *ngIf="isLoading; else itemsLoaded" class="loading-message">
+      Carregando projetos...
+    </div>
+
+    <ng-template #itemsLoaded>
+      <div *ngIf="projetos.length === 0" class="no-items-message">
+        Nenhum projeto encontrado.
+      </div>
+
+      <div *ngIf="projetos.length > 0" class="item-cards-grid">
+        <div *ngFor="let item of projetos" class="item-card">
+          <img [src]="item.imagem" [alt]="'Imagem do projeto ' + item.titulo" class="item-image">
+          <div class="card-content">
+            <h3>{{ item.titulo }}</h3>
+            <p class="item-description">{{ item.descricao }}</p>
+            <p class="item-location" *ngIf="item.local">Local: {{ item.local }}</p>
+            <p class="item-year" *ngIf="item.anoConclusao">Ano: {{ item.anoConclusao }}</p>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </section>
+</div>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "proj1",
+    "titulo": "Projeto Hidrossanitário para Hospital Regional",
+    "descricao": "Desenvolvimento do projeto completo de instalações hidrossanitárias para novo complexo hospitalar, seguindo normas de saúde rigorosas.",
+    "imagem": "https://images.pexels.com/photos/40568/medical-surgical-equipment-bore-and-scissors-40568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "local": "Ribeirão Preto - SP",
+    "anoConclusao": 2024,
+    "categoria": "projeto"
+  },
+  {
+    "id": "proj2",
+    "titulo": "Estudo de Viabilidade para Usina Solar",
+    "descricao": "Análise de viabilidade técnica e econômica para implantação de uma usina fotovoltaica de grande escala em área rural.",
+    "imagem": "https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "local": "Uberlândia - MG",
+    "anoConclusao": 2023,
+    "categoria": "projeto"
+  },
+  {
+    "id": "proj3",
+    "titulo": "Projeto de Automação Predial Inteligente",
+    "descricao": "Concepção e planejamento de sistema de automação para edifício comercial, integrando controle de iluminação, climatização e segurança.",
+    "imagem": "https://images.pexels.com/photos/1036814/pexels-photo-1036814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "local": "Curitiba - PR",
+    "anoConclusao": 2025,
+    "categoria": "projeto"
+  },
+  {
+    "id": "obra1",
+    "titulo": "Obra de Reforma de Edifício Comercial",
+    "descricao": "Execução da reforma estrutural e renovação das instalações elétricas e hidráulicas de um edifício comercial no centro da cidade.",
+    "imagem": "https://images.pexels.com/photos/3807439/pexels-photo-3807439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "local": "São Paulo - SP",
+    "anoConclusao": 2023,
+    "categoria": "obra"
+  },
+  {
+    "id": "obra2",
+    "titulo": "Construção de Galpão Industrial",
+    "descricao": "Construção completa de galpão industrial com sistema de climatização e eficiência energética integrada.",
+    "imagem": "https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "local": "Campinas - SP",
+    "anoConclusao": 2022,
+    "categoria": "obra"
+  },
+  {
+    "id": "obra3",
+    "titulo": "Projeto de Instalações Prediais para Condomínio Residencial",
+    "descricao": "Planejamento e execução das instalações elétricas, hidráulicas e de gás para condomínio residencial de alto padrão.",
+    "imagem": "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "local": "Florianópolis - SC",
+    "anoConclusao": 2024,
+    "categoria": "obra"
+  }
+]

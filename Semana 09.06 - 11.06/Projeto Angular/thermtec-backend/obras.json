@@ -1,0 +1,26 @@
+[
+  {
+    "id": "obra1",
+    "titulo": "Construção de Edifício Residencial Luxo",
+    "descricao": "Execução completa de obra civil para edifício de alto padrão, incluindo fundações, estrutura e acabamentos finos.",
+    "imagem": "https://images.pexels.com/photos/17604314/pexels-photo-17604314/free-photo-of-predios-arquitetura-construcoes-exterior.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "local": "Campinas - SP",
+    "anoConclusao": 2022
+  },
+  {
+    "id": "obra2",
+    "titulo": "Reforma de Centro Comercial Antigo",
+    "descricao": "Modernização e ampliação de um centro comercial existente, com foco em novas instalações elétricas e sistemas de segurança.",
+    "imagem": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "local": "São Paulo - SP",
+    "anoConclusao": 2023
+  },
+  {
+    "id": "obra3",
+    "titulo": "Construção de Galpão Industrial",
+    "descricao": "Construção de novo galpão para armazenagem e logística, com estrutura metálica e sistemas de ventilação natural.",
+    "imagem": "https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "local": "Limeira - SP",
+    "anoConclusao": 2024
+  }
+]

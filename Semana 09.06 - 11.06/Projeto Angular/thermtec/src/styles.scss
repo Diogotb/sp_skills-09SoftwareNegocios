@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { 
+  height: 100%; 
+}
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  transition: background-color 0.3s, color 0.3s; /* Adiciona transição suave */
+}
+
+/* Variáveis de cores */
+:root {
+  --bg-color: #ffffff;        /* Fundo claro */
+  --text-color: #000000;      /* Texto preto */
+  --header-color: #ffffff;    /* Header branco */
+  --footer-color: #ffffff;    /* Footer branco */
+  --detail-color: #007bff;    /* Detalhe azul-claro */
+}
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+  --bg-color: #000000;        /* Fundo preto */
+  --text-color: #ffffff;      /* Texto branco */
+  --header-color: #ff8c00;    /* Header laranja escuro */
+  --footer-color: #ff8c00;    /* Footer laranja escuro */
+  --detail-color: #add8e6;    /* Detalhe azul-claro (mais claro) */
+}
+
+/* Aplica as variáveis ao body */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Estilos para header e footer (exemplo) */
+header {
+  background-color: var(--header-color);
+  color: var(--text-color);
+  padding: 10px;
+}
+
+footer {
+  background-color: var(--footer-color);
+  color: var(--text-color);
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos para detalhes (exemplo) */
+.detail {
+  color: var(--detail-color);
+}

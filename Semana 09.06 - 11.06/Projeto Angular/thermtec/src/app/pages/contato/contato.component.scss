@@ -1,0 +1,221 @@
+@use "sass:color";
+
+$primary-blue: #28377d;
+$light-gray: #f7f8fa;
+$medium-gray: #d4d4d4;
+$text-color: #333;
+$white: #fff;
+$error-red: #e74c3c;
+
+:host {
+  display: block;
+  padding: 24px;
+  background-color: $light-gray;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 36px;
+
+  h2 {
+    color: $primary-blue;
+    margin-bottom: 12px;
+    font-size: 2.4em;
+    font-weight: 700;
+  }
+
+  p {
+    color: $text-color;
+    font-size: 1.15em;
+    max-width: 780px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+}
+
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 36px;
+  background-color: $white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  max-width: 600px;
+  margin: 0 auto 48px auto;
+  border: 1px solid $medium-gray;
+
+  .contact-form {
+    width: 100%;
+
+    .form-group {
+      margin-bottom: 24px;
+
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: $primary-blue;
+        font-size: 1em;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: calc(100% - 22px);
+        padding: 14px 11px;
+        border: 1.5px solid $medium-gray;
+        border-radius: 6px;
+        font-size: 1.05em;
+        color: $text-color;
+        background-color: #fafafa;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:focus {
+          border-color: $primary-blue;
+          outline: none;
+          box-shadow: 0 0 8px rgba($primary-blue, 0.3);
+          background-color: #fff;
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 110px;
+      }
+
+      input.ng-invalid.ng-touched,
+      textarea.ng-invalid.ng-touched {
+        border-color: $error-red;
+      }
+
+      .error-message {
+        color: $error-red;
+        font-size: 0.9em;
+        margin-top: 6px;
+        display: block;
+        font-weight: 500;
+      }
+    }
+
+    button[type="submit"] {
+      background-color: #ff8c00;
+      color: $white;
+      padding: 16px 28px;
+      border: none;
+      border-radius: 7px;
+      font-size: 1.15em;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      display: block;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(255, 140, 0, 0.5);
+
+      &:hover:not(:disabled) {
+        background-color: color.adjust(#ff8c00, $lightness: -12%);
+        box-shadow: 0 6px 20px rgba(255, 140, 0, 0.7);
+      }
+
+      &:disabled {
+        background-color: $medium-gray;
+        cursor: not-allowed;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.direct-contact-info {
+  background-color: $white;
+  padding: 36px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid $medium-gray;
+
+  h3 {
+    color: $primary-blue;
+    margin-bottom: 28px;
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  .contact-channels {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    .channel-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.15em;
+      color: $text-color;
+
+      span:first-child {
+        font-weight: 600;
+      }
+
+      a {
+        color: $primary-blue;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          text-decoration: underline;
+          color: color.scale($primary-blue, $lightness: -15%);
+        }
+      }
+    }
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .contact-form-section,
+  .direct-contact-info {
+    padding: 24px;
+    margin: 0 20px 36px 20px;
+  }
+
+  .contact-intro {
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1.05em;
+    }
+  }
+
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    width: calc(100% - 18px);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-section,
+  .direct-contact-info {
+    padding: 16px;
+  }
+
+  .contact-intro {
+    h2 {
+      font-size: 1.6em;
+    }
+    p {
+      font-size: 0.95em;
+    }
+  }
+
+  .direct-contact-info .contact-channels {
+    flex-direction: column;
+    align-items: center;
+  }
+}
