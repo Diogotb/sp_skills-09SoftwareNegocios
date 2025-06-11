@@ -2,13 +2,30 @@
 
 $primary-blue: #28377d;
 $light-gray: #f0f0f0;
-$text-color: #333;
+$text-color-light: #333;
+$bg-color-light: #ffffff;
+
+$text-color-dark: #eee;
+$bg-color-dark: #121212;
+
+:root {
+  --primary-blue: #{$primary-blue};
+  --bg-color: #{$bg-color-light};
+  --text-color: #{$text-color-light};
+}
+
+[data-theme='dark'] {
+  --primary-blue: #{$primary-blue}; // mantém mesmo azul
+  --bg-color: #{$bg-color-dark};
+  --text-color: #{$text-color-dark};
+}
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: $light-gray;
-  color: $text-color;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 main {

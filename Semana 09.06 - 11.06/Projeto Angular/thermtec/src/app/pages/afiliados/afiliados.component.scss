@@ -156,3 +156,69 @@ body {
     align-items: center;
   }
 }
+
+/* Estilos para o modo escuro */
+[data-theme='dark'] {
+  $primary-color: #ff8c00; // Laranja escuro
+  $secondary-color: #2c2c2c; // Fundo escuro
+  $text-color: #ffffff; // Texto branco
+  $light-text-color: #cccccc; // Texto claro
+  $border-color: #444; // Cor da borda escura
+  $card-bg: #333; // Fundo dos cards escuros
+
+  body {
+    background-color: $secondary-color;
+    color: $text-color;
+  }
+
+  .partners-intro {
+    background-color: $secondary-color;
+    border-bottom: 1px solid $border-color;
+
+    h2 {
+      color: $primary-color;
+    }
+
+    p {
+      color: $light-text-color;
+    }
+  }
+
+  .affiliated-companies {
+    h3 {
+      color: $primary-color;
+    }
+  }
+
+  .company-card {
+    background-color: $card-bg;
+    border: 1px solid $border-color;
+
+    h4 {
+      color: $primary-color;
+    }
+
+    p {
+      color: $light-text-color;
+    }
+  }
+
+  .partners-call-to-action {
+    background-color: $primary-color;
+    color: $card-bg;
+
+    p {
+      color: $card-bg;
+    }
+
+    button {
+      background: linear-gradient(135deg, $card-bg 0%, $primary-color 100%);
+      color: $primary-color;
+
+      &:hover {
+        background: linear-gradient(135deg, $primary-color 0%, $card-bg 100%);
+        color: $card-bg;
+      }
+    }
+  }
+}

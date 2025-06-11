@@ -1,10 +1,10 @@
 /* Variáveis para cores e espaçamentos */
-$primary-color: #3f51b5; // Azul primário
-$secondary-color: #f4f4f4; // Cinza claro
-$text-color: #333; // Cor principal do texto
-$light-text-color: #666; // Texto secundário
-$border-color: #ddd; // Cor da borda
-$card-bg: #f9f9f9; // Fundo dos cards
+$primary-color: var(--primary-blue); // Azul primário
+$secondary-color: var(--light-gray); // Cinza claro
+$text-color: var(--text-color); // Cor principal do texto
+$light-text-color: var(--medium-gray); // Texto secundário
+$border-color: var(--medium-gray); // Cor da borda
+$card-bg: var(--background-color); // Fundo dos cards
 
 .portfolio-container {
   font-family: Arial, sans-serif;
@@ -12,6 +12,11 @@ $card-bg: #f9f9f9; // Fundo dos cards
   line-height: 1.6;
   text-align: center;
   padding-bottom: 50px;
+
+  // Modo escuro
+  body.dark-mode & {
+    color: var(--text-color);
+  }
 }
 
 .portfolio-intro {
@@ -24,6 +29,11 @@ $card-bg: #f9f9f9; // Fundo dos cards
     font-size: 2.5em;
     margin-bottom: 20px;
     font-weight: 700;
+
+    // Modo escuro
+    body.dark-mode & {
+      color: var(--header-color);
+    }
   }
 
   p {
@@ -33,6 +43,11 @@ $card-bg: #f9f9f9; // Fundo dos cards
     max-width: 800px;
     margin: 0 auto;
     font-weight: 400;
+
+    // Modo escuro
+    body.dark-mode & {
+      color: var(--text-color);
+    }
   }
 }
 
@@ -40,6 +55,11 @@ $card-bg: #f9f9f9; // Fundo dos cards
   padding: 60px 20px;
   max-width: 1200px;
   margin: 0 auto;
+
+  // Modo escuro
+  body.dark-mode & {
+    background-color: var(--bg-color);
+  }
 }
 
 .loading-message,
@@ -47,6 +67,11 @@ $card-bg: #f9f9f9; // Fundo dos cards
   font-size: 1.2em;
   color: $light-text-color;
   padding: 50px 0;
+
+  // Modo escuro
+  body.dark-mode & {
+    color: var(--text-color);
+  }
 }
 
 .item-cards-grid {
@@ -75,6 +100,12 @@ $card-bg: #f9f9f9; // Fundo dos cards
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     outline: none;
   }
+
+  // Modo escuro
+  body.dark-mode & {
+    background-color: var(--bg-color);
+    border: 1px solid var(--medium-gray);
+  }
 }
 
 .item-image {
@@ -90,6 +121,11 @@ $card-bg: #f9f9f9; // Fundo dos cards
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  // Modo escuro
+  body.dark-mode & {
+    background-color: var(--bg-color);
+  }
 }
 
 .card-content h3 {
@@ -98,6 +134,11 @@ $card-bg: #f9f9f9; // Fundo dos cards
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
+
+  // Modo escuro
+  body.dark-mode & {
+    color: var(--header-color);
+  }
 }
 
 .item-description {
@@ -106,6 +147,11 @@ $card-bg: #f9f9f9; // Fundo dos cards
   margin-bottom: 10px;
   flex-grow: 1;
   font-weight: 400;
+
+  // Modo escuro
+  body.dark-mode & {
+    color: var(--text-color);
+  }
 }
 
 .item-location,
@@ -114,6 +160,11 @@ $card-bg: #f9f9f9; // Fundo dos cards
   font-size: 0.85em;
   font-style: italic;
   margin-top: 5px;
+
+  // Modo escuro
+  body.dark-mode & {
+    color: var(--light-text-color);
+  }
 }
 
 /* Responsividade */

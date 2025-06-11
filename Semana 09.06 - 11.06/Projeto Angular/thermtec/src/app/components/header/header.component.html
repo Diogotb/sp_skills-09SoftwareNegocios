@@ -9,4 +9,7 @@
     <a routerLink="/afiliados" routerLinkActive="active">Afiliados</a>
     <a routerLink="/contato" routerLinkActive="active">Contato</a>
   </nav>
+  <button (click)="toggleTheme()" class="theme-toggle">
+    {{ isDarkMode ? 'Modo Claro' : 'Modo Escuro' }}
+  </button>
 </header>

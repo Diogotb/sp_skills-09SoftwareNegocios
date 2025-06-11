@@ -1,0 +1,19 @@
+/* _theme-variables.scss */
+
+/* Variáveis de cores para o modo claro */
+:root {
+  --bg-color: #ffffff;        /* Fundo claro */
+  --text-color: #000000;      /* Texto preto */
+  --header-color: #ffffff;    /* Header branco */
+  --footer-color: #ffffff;    /* Footer branco */
+  --detail-color: #007bff;    /* Detalhe azul-claro */
+}
+
+/* Estilos para o modo escuro */
+body.dark-mode {
+  --bg-color: #000000;        /* Fundo preto */
+  --text-color: #ffffff;      /* Texto branco */
+  --header-color: #ff8c00;    /* Header laranja escuro */
+  --footer-color: #ff8c00;    /* Footer laranja escuro */
+  --detail-color: #add8e6;    /* Detalhe azul-claro (mais claro) */
+}

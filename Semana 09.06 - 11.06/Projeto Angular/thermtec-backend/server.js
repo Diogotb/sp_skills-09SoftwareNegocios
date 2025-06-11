@@ -74,6 +74,21 @@ app.get('/portfolio', async (req, res) => {
     }
 });
 
+app.get('/carousel/urls', async (req, res) => {
+    try {
+        const carouselCollection = db.collection('carousel');
+        // Usar a projeção para retornar somente o campo url, excluindo _id
+        const urls = await carouselCollection.find({}, { projection: { _id: 0, url: 1 } }).toArray();
+        // Mapear só os valores das URLs (string) para retornar um array simples de strings
+        res.json(urls.map(item => item.url));
+        console.log("URLs do carousel enviadas para o frontend.");
+    } catch (error) {
+        console.error("Erro ao buscar URLs do carousel:", error);
+        res.status(500).json({ message: "Erro interno do servidor ao buscar URLs do carousel." });
+    }
+});
+
+
 // Rota POST para enviar E-MAIL DO FORMULÁRIO DE CONTATO (AGORA COM SENDGRID)
 app.post('/enviar-email-contato', async (req, res) => {
     console.log('Requisição recebida na rota /enviar-email-contato');

@@ -6,29 +6,57 @@
       Descubra mais sobre nossa expertise e parcerias em engenharia térmica.
     </p>
 
-    <section class="highlighted-projects" *ngIf="!isLoading; else loading">
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+      <div *ngIf="carouselError" class="error-message">
+        <p>{{ carouselError }}</p>
+      </div>
+
+      <ngx-slick-carousel *ngIf="carouselImages.length > 0" 
+                          class="carousel" 
+                          [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let image of carouselImages" class="slide">
+          <img [src]="image.url" 
+               [alt]="image.alt" 
+               class="carousel-image">
+        </div>
+      </ngx-slick-carousel>
+
+      <div *ngIf="!carouselError && carouselImages.length === 0" class="loading-spinner">
+        <p>Carregando imagens...</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="highlighted-projects" *ngIf="!isLoading && projetos.length > 0">
       <h2>Principais Projetos</h2>
       <div class="cards-grid">
         <div *ngFor="let projeto of projetos" class="card">
           <h3>{{ projeto.titulo }}</h3>
-          <img [src]="projeto.imagem" [alt]="projeto.titulo" class="card-image" />
+          <img [src]="projeto.imagem" 
+               [alt]="projeto.titulo" 
+               class="card-image">
           <p>{{ projeto.descricao }}</p>
         </div>
       </div>
     </section>
 
-    <section class="highlighted-works" *ngIf="!isLoading">
+    <!-- Works Section -->
+    <section class="highlighted-works" *ngIf="!isLoading && obras.length > 0">
       <h2>Principais Obras</h2>
       <div class="cards-grid">
         <div *ngFor="let obra of obras" class="card">
           <h3>{{ obra.titulo }}</h3>
-          <img [src]="obra.imagem" [alt]="obra.titulo" class="card-image" />
+          <img [src]="obra.imagem" 
+               [alt]="obra.titulo" 
+               class="card-image">
           <p>{{ obra.descricao }}</p>
         </div>
       </div>
     </section>
   </header>
 
+  <!-- Services Section -->
   <section class="services-section">
     <h2>Nossos Serviços</h2>
     <div class="service-cards">
@@ -47,7 +75,8 @@
     </div>
   </section>
 
-  <ng-template #loading>
-    <div class="loading-message">Carregando dados...</div>
-  </ng-template>
+  <!-- Loading State -->
+  <div *ngIf="isLoading" class="loading-message">
+    <p>Carregando dados...</p>
+  </div>
 </div>
