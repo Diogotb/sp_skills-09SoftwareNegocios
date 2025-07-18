@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Miguel_09\\source\\repos\\ProjetoGrandeEDesnecessariamenteComplicado\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4192A02-3B99-492F-BC7D-514C077A800F}|ProjetoGrandeEDesnecessariamenteComplicado\\ProjetoGrandeEDesnecessariamenteComplicado.csproj|c:\\users\\miguel_09\\source\\repos\\projetograndeedesnecessariamentecomplicado\\projetograndeedesnecessariamentecomplicado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4192A02-3B99-492F-BC7D-514C077A800F}|ProjetoGrandeEDesnecessariamenteComplicado\\ProjetoGrandeEDesnecessariamenteComplicado.csproj|solutionrelative:projetograndeedesnecessariamentecomplicado\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4192A02-3B99-492F-BC7D-514C077A800F}|ProjetoGrandeEDesnecessariamenteComplicado\\ProjetoGrandeEDesnecessariamenteComplicado.csproj|c:\\users\\miguel_09\\source\\repos\\projetograndeedesnecessariamentecomplicado\\projetograndeedesnecessariamentecomplicado\\models\\pessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4192A02-3B99-492F-BC7D-514C077A800F}|ProjetoGrandeEDesnecessariamenteComplicado\\ProjetoGrandeEDesnecessariamenteComplicado.csproj|solutionrelative:projetograndeedesnecessariamentecomplicado\\models\\pessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pessoas.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel_09\\source\\repos\\ProjetoGrandeEDesnecessariamenteComplicado\\ProjetoGrandeEDesnecessariamenteComplicado\\Models\\Pessoas.cs",
+              "RelativeDocumentMoniker": "ProjetoGrandeEDesnecessariamenteComplicado\\Models\\Pessoas.cs",
+              "ToolTip": "C:\\Users\\Miguel_09\\source\\repos\\ProjetoGrandeEDesnecessariamenteComplicado\\ProjetoGrandeEDesnecessariamenteComplicado\\Models\\Pessoas.cs",
+              "RelativeToolTip": "ProjetoGrandeEDesnecessariamenteComplicado\\Models\\Pessoas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T18:54:21.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel_09\\source\\repos\\ProjetoGrandeEDesnecessariamenteComplicado\\ProjetoGrandeEDesnecessariamenteComplicado\\Program.cs",
+              "RelativeDocumentMoniker": "ProjetoGrandeEDesnecessariamenteComplicado\\Program.cs",
+              "ToolTip": "C:\\Users\\Miguel_09\\source\\repos\\ProjetoGrandeEDesnecessariamenteComplicado\\ProjetoGrandeEDesnecessariamenteComplicado\\Program.cs",
+              "RelativeToolTip": "ProjetoGrandeEDesnecessariamenteComplicado\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T18:33:23.087Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

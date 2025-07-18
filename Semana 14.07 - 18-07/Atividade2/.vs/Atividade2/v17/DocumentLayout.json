@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Miguel_09\\source\\repos\\Atividade2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D784B401-140C-41A3-945C-8CFEDDAB1565}|Atividade2\\Atividade2.csproj|c:\\users\\miguel_09\\source\\repos\\atividade2\\atividade2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D784B401-140C-41A3-945C-8CFEDDAB1565}|Atividade2\\Atividade2.csproj|solutionrelative:atividade2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel_09\\source\\repos\\Atividade2\\Atividade2\\Program.cs",
+              "RelativeDocumentMoniker": "Atividade2\\Program.cs",
+              "ToolTip": "C:\\Users\\Miguel_09\\source\\repos\\Atividade2\\Atividade2\\Program.cs",
+              "RelativeToolTip": "Atividade2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T17:50:09.147Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

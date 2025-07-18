@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Miguel_09\\source\\repos\\Exercicios3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C296C1BB-A0F8-4577-B77D-5BF9C4CCEB16}|Exercicios3\\Exercicios3.csproj|c:\\users\\miguel_09\\source\\repos\\exercicios3\\exercicios3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C296C1BB-A0F8-4577-B77D-5BF9C4CCEB16}|Exercicios3\\Exercicios3.csproj|solutionrelative:exercicios3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Miguel_09\\source\\repos\\Exercicios3\\Exercicios3\\Program.cs",
+              "RelativeDocumentMoniker": "Exercicios3\\Program.cs",
+              "ToolTip": "C:\\Users\\Miguel_09\\source\\repos\\Exercicios3\\Exercicios3\\Program.cs*",
+              "RelativeToolTip": "Exercicios3\\Program.cs*",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwDYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T11:12:38.345Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
