@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Miguel_09\\source\\repos\\Banco\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A288F84-471E-44FA-9DF9-6DE17FD3ED66}|Banco\\Banco.vcxproj|C:\\Users\\Miguel_09\\source\\repos\\Banco\\Banco\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A288F84-471E-44FA-9DF9-6DE17FD3ED66}|Banco\\Banco.vcxproj|solutionrelative:Banco\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A288F84-471E-44FA-9DF9-6DE17FD3ED66}|Banco\\Banco.vcxproj|C:\\Users\\Miguel_09\\source\\repos\\Banco\\Banco\\Banco.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7A288F84-471E-44FA-9DF9-6DE17FD3ED66}|Banco\\Banco.vcxproj|solutionrelative:Banco\\Banco.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Miguel_09\\source\\repos\\Banco\\Banco\\main.cpp",
+              "RelativeDocumentMoniker": "Banco\\main.cpp",
+              "ToolTip": "C:\\Users\\Miguel_09\\source\\repos\\Banco\\Banco\\main.cpp*",
+              "RelativeToolTip": "Banco\\main.cpp*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwDUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-22T11:37:04.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Banco.cpp",
+              "DocumentMoniker": "C:\\Users\\Miguel_09\\source\\repos\\Banco\\Banco\\Banco.cpp",
+              "RelativeDocumentMoniker": "Banco\\Banco.cpp",
+              "ToolTip": "C:\\Users\\Miguel_09\\source\\repos\\Banco\\Banco\\Banco.cpp",
+              "RelativeToolTip": "Banco\\Banco.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwDUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-22T11:34:18.106Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
