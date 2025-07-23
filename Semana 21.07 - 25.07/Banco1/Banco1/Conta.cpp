@@ -1,4 +1,6 @@
 #include "Conta.hpp"
+#include <variant>
+#include <utility>
 #include <iostream>
 
 int Conta::numeroDeContas = 0;
@@ -19,11 +21,11 @@ Conta::~Conta()
 
 
 
-void Conta::sacar(float valorASacar)
-{
+std::variant<Conta::ResultadoSaque,float >Conta::sacar(float valorASacar)
+{   //pair
     if (valorASacar < 0) {
         std::cout << "Não pode sacar valor negativo" << std::endl;
-        return;
+        return ValorNegativo;
     }
 
     float tarifaDeSaque = valorASacar * taxaDeSaque(); // Cast to float
@@ -31,9 +33,11 @@ void Conta::sacar(float valorASacar)
 
     if (valorDoSaque > saldo) {
         std::cout << "Saldo Insuficiente" << std::endl;
-        return;
+        return SaldoInsuficiente;
     }
     saldo -= valorDoSaque;
+
+    return saldo;
 }
 
 void Conta::depositar(float valorADepositar)
@@ -69,4 +73,9 @@ int Conta::recuperaNumeroDeContas()
 void Conta::operator+=(float valorADepositar)
 {
     depositar(valorADepositar);
+}
+
+bool Conta::operator<(const Conta& outra)
+{
+    return this->saldo < outra.saldo;
 }

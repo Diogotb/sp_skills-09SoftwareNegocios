@@ -1,5 +1,7 @@
 #pragma once
 #include <string>
+#include <utility>
+#include <variant>
 #include "Titular.h"
 
 class Conta {
@@ -14,7 +16,13 @@ public:
     Conta(std::string numeroConta, Titular titular);
     virtual ~Conta();
 
-    void sacar(float valorASacar);
+    enum ResultadoSaque
+    {
+        /*Sucesso,*/ ValorNegativo, SaldoInsuficiente
+    };
+
+    std::variant<ResultadoSaque,float> sacar(float valorASacar);
+       //caso de errado mudar para pair
     void depositar(float valorADepositar);
     float recuperaSaldo() const;
     std::string recuperarNumeroConta() const;
@@ -22,4 +30,6 @@ public:
     static int recuperaNumeroDeContas();
     void operator+=(float valorADepositar);
     virtual float taxaDeSaque() const = 0;
+    bool operator<(const Conta& outra);
+    friend std::ostream& operator<<(std::ostream& cout, const Conta& conta);
 };

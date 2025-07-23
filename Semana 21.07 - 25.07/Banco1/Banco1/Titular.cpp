@@ -14,10 +14,10 @@ Titular::Titular(Cpf cpf, std::string nome, std::string senha) : Pessoa(cpf, nom
     verificaTamanhoDoNome();
 }
 
-Cpf Titular::recuperaCpf() const
-{
-    return Pessoa::recuperaCpf();
-}
+//Cpf Titular::recuperaCpf() const
+//{
+//    return Pessoa::recuperaCpf();
+//}
 
 std::string Titular::recuperarNome() const
 {

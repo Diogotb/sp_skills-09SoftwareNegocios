@@ -7,5 +7,6 @@ public:
 	ContaCorrente(std::string numeroConta, Titular titular);
 	float taxaDeSaque() const override;
 	void transferePara(Conta& conta, float valor);
+	void operator+=(ContaCorrente& contaOrigem);
 };
 

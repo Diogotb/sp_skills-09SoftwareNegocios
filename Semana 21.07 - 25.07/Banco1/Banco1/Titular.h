@@ -4,7 +4,7 @@
 #include "Pessoa.h"
 #include "Autenticavel.h"
 
-class Titular : public Pessoa, public Autenticavel {
+class Titular : public Pessoa<Cpf>, public Autenticavel {
 private:
     void verificaTamanhoDoNome();
 

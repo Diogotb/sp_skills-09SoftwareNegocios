@@ -4,7 +4,7 @@
 #include <string>
 #include "Pessoa.h"
 
-class Funcionario : public Pessoa {
+class Funcionario : public Pessoa<Cpf> {
 private:
     float salario;
     // 0 = domingo, 1 = segunda ...
